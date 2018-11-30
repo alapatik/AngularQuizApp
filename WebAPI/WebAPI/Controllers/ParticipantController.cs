@@ -29,7 +29,7 @@ namespace WebAPI.Controllers
         {
             using (DBModel model = new DBModel())
             {
-                model.Entry(model).State = System.Data.Entity.EntityState.Modified;
+                model.Entry(participant).State = System.Data.Entity.EntityState.Modified;
                 model.SaveChanges();
             }
         }
